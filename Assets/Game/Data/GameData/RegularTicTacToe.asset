@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb090299901bb0543838c03be7c2de22, type: 3}
+  m_Name: RegularTicTacToe
+  m_EditorClassIdentifier: 
+  _aiLogic: {fileID: 11400000, guid: ca7c1a228d1a1424f9ba48cd887e5da0, type: 2}
+  _iAPieces:
+  - {fileID: 3638298012780015931, guid: 6ff9cd4e0f063a24bb0c71118f3f225e, type: 3}
+  - {fileID: 6773652716965916599, guid: d719ab71eb36ea3419e443992fb7bfd6, type: 3}
+  - {fileID: 6704188498738767669, guid: 76c60ca4e0497be45b0222cb5a71b369, type: 3}
+  _playerPieces:
+  - {fileID: 3184003572261400178, guid: 5c14e4b36c336084fb6d863a0626fea0, type: 3}
+  - {fileID: 872345215129269083, guid: e6fafea453e461c4e89323a8f2649452, type: 3}
+  - {fileID: 4896149603627251601, guid: 44d561880d6ffd949a2ac1f20e819ef9, type: 3}
+  _boardSize: {x: 3, y: 3}
+  _consecutivePiecesToWin: 3
+  _player1Color: {fileID: 2100000, guid: 5ff9ed5c374b712438cab17c4d08dcd5, type: 2}
+  _player2Color: {fileID: 2100000, guid: 1c02c8dec0c3ade4ab2b3f83a4367c75, type: 2}
+  _boardColor1: {fileID: 2100000, guid: c57d69496e4b1fe478c027df468efa9d, type: 2}
+  _boardColor2: {fileID: 2100000, guid: 311063af64e61374f8bc72bbadd693b7, type: 2}

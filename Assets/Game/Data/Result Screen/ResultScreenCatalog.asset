@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c38983ef6a2c62468c2dfc2f017dcca, type: 3}
+  m_Name: ResultScreenCatalog
+  m_EditorClassIdentifier: 
+  _win:
+    Background: {fileID: 21300000, guid: c406d84cf28a27b4e9b5bb520d015870, type: 3}
+    Title: Victory!
+    Description: You did great!
+    TitleColor: {r: 0.6392157, g: 1, b: 0.4392157, a: 1}
+    DescriptionColor: {r: 0.29975572, g: 0.5471698, b: 0.16260235, a: 1}
+    ButtonText: Play Again
+  _lose:
+    Background: {fileID: 21300000, guid: dd243f445f4c2424a8b37a8df580715c, type: 3}
+    Title: Defeat...
+    Description: Better luck next time!
+    TitleColor: {r: 1, g: 0.7529412, b: 0.75686276, a: 1}
+    DescriptionColor: {r: 0.6226415, g: 0.28488788, b: 0.29024902, a: 1}
+    ButtonText: Try again
+  _draw:
+    Background: {fileID: 21300000, guid: d309489f14a43bd43837c666ec25b316, type: 3}
+    Title: Draw
+    Description: We run out of movements!
+    TitleColor: {r: 1, g: 0.7882353, b: 0.2784314, a: 1}
+    DescriptionColor: {r: 0.6132076, g: 0.46465316, b: 0.10702208, a: 1}
+    ButtonText: Try again
