@@ -34,8 +34,8 @@ public class AIController
 
     public void PlacePiece()
     {
-        AiPieceView pieceBehaviour = _piecesSpawned.Find(w => w.TileCoords.x == -1);
-        _logic.PlacePiece(_boardManager, pieceBehaviour);
+        List<AiPieceView> pieceBehaviours = _piecesSpawned.FindAll(w => w.TileCoords.x == -1);
+        _logic.PlacePiece(_boardManager, pieceBehaviours[UnityEngine.Random.Range(0,pieceBehaviours.Count)]);
     }
 
     public void MovePiece()

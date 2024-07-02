@@ -77,7 +77,7 @@ public class GameController
     {
         int randomInt = Random.Range(0, 2);
         var team = (Team[])Enum.GetValues(typeof(Team));
-        _currentPlayer = team[1];
+        _currentPlayer = team[randomInt];
         _waitingPlayer = Team.Player1;
         if (_currentPlayer == Team.Player1)
             _waitingPlayer = Team.Player2;

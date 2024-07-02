@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 499
     height: 698
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -449,9 +449,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c6440000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e67ffeff3ef7feff86f8feff0200ffff1002ffff1c0affffd81effff0ab100007cb10000
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.4649419, y: 0.053043444, z: -0.027970867, w: 0.8833478}
     speed: 2
-    m_Value: {x: 0.46492553, y: 0.053041577, z: -0.027969884, w: 0.88331676}
+    m_Value: {x: -0.4649419, y: -0.053043444, z: 0.02797087, w: -0.8833478}
   m_Size:
     m_Target: 3.0702112
     speed: 2
@@ -1049,7 +1049,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Prefab/AiPieces
+    - Assets/Game/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1057,16 +1057,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 51
   m_LastFolders:
-  - Assets/Game/Prefab/AiPieces
+  - Assets/Game/Scenes
   m_LastFoldersGridSize: 51
   m_LastProjectPath: C:\Users\alber\Documents\Tatedrez
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: c6440000
-    m_LastClickedID: 17606
-    m_ExpandedIDs: 00000000ea400000224100002e420000464200007642000000ca9a3bffffff7f
+    m_SelectedIDs: 82420000
+    m_LastClickedID: 17026
+    m_ExpandedIDs: 00000000465b0000485b00004a5b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1094,7 +1094,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000465b0000485b00004a5b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1119,9 +1119,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c6440000
-    m_LastClickedInstanceID: 17606
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 108c0000
+    m_LastClickedInstanceID: 35856
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 0a8a0000a80200006e8e0000c88300004e90000000000000825e0000945f0000306c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
