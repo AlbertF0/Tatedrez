@@ -1,41 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alber\\Tatedrez\\",
+  "WorkspaceRootPath": "C:\\Users\\alber\\Documents\\Tatedrez\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\tatedrez\\assets\\game\\scripts\\chesspiecebehaviour\\playerpieceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\chesspiecebehaviour\\playerpieceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\tatedrez\\assets\\game\\scripts\\chesspiecebehaviour\\apieceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\chesspiecebehaviour\\apieceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\tatedrez\\assets\\game\\scripts\\chesspiecebehaviour\\aipieceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\chesspiecebehaviour\\aipieceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Tatedrez\\assets\\game\\scripts\\views\\ui\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\views\\ui\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Tatedrez\\assets\\game\\scripts\\managers\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\managers\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\managers\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Tatedrez\\assets\\game\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Tatedrez\\assets\\game\\scripts\\scriptableobjects\\resultscreencatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\aidifficulty\\aimedium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\aidifficulty\\aimedium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\scriptableobjects\\resultscreencatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\scriptableobjects\\resultscreencatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Tatedrez\\assets\\game\\scripts\\views\\ui\\gamefinishedpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\views\\ui\\gamefinishedpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Tatedrez\\assets\\game\\scripts\\events\\gamefinishedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\events\\gamefinishedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\events\\gamefinishedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -51,114 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AiPieceView.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ChessPieceBehaviour\\AiPieceView.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\ChessPieceBehaviour\\AiPieceView.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ChessPieceBehaviour\\AiPieceView.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\ChessPieceBehaviour\\AiPieceView.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAlAAAA",
+              "Title": "AIMedium.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T10:31:36.489Z",
+              "WhenOpened": "2024-07-02T00:31:02.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerPieceView.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ChessPieceBehaviour\\PlayerPieceView.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\ChessPieceBehaviour\\PlayerPieceView.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ChessPieceBehaviour\\PlayerPieceView.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\ChessPieceBehaviour\\PlayerPieceView.cs",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAAuwDkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T08:37:55.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "APieceView.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ChessPieceBehaviour\\APieceView.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\ChessPieceBehaviour\\APieceView.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ChessPieceBehaviour\\APieceView.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\ChessPieceBehaviour\\APieceView.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAQwAMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T08:37:28.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ResultScreenCatalog.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T08:14:50.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GameFinishedEvent.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T22:36:28.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HUDView.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAQwGQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T22:35:59.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "BoardManager.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
               "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
               "RelativeToolTip": "Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAlwLgAAABwAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowFAAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T22:35:04.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameFinishedPanelView.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Views\\UI\\GameFinishedPanelView.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Views\\UI\\GameFinishedPanelView.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Views\\UI\\GameFinishedPanelView.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\Views\\UI\\GameFinishedPanelView.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAzAAAA",
+              "DocumentIndex": 1,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\Controllers\\GameController.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAADwv6IAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T21:56:52.126Z"
+              "WhenOpened": "2024-06-28T22:32:32.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\alber\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\GameController.cs",
-              "RelativeToolTip": "Assets\\Game\\Scripts\\Controllers\\GameController.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAcwGgAAAAoAAAA",
+              "DocumentIndex": 4,
+              "Title": "GameFinishedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T22:32:32.043Z",
+              "WhenOpened": "2024-06-30T22:36:28.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResultScreenCatalog.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T08:14:50.843Z",
               "EditorCaption": ""
             }
           ]

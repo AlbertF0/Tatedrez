@@ -15,9 +15,9 @@ public class GameController
     public enum Team { Player1, Player2 , None };
     public enum Result { Victory, Defeat, Draw};
 
-    private int _turn;
-    private int _turnsUntilPlacementPhaseEnd;
+    private int totalNumberOfPieces;
     private bool _placementPhase;
+    private bool _gameFinishedBool;
     private Team _currentPlayer;
     private Team _waitingPlayer;
     private BoardManager _boardManager;
@@ -25,6 +25,7 @@ public class GameController
     private EventDispatcher _eventDispatcher;
     private AIController _aiController;
     private CoroutineRunner _coroutineRunner;
+    private Coroutine _coroutine;
 
     private EndOfDeploymentEvent _endOfDeploymentEvent = new EndOfDeploymentEvent();
     private ChangeTurnEvent _changeTurnEvent = new ChangeTurnEvent();
@@ -53,7 +54,7 @@ public class GameController
         _boardManager = boardManager;
         _eventDispatcher = eventDispatcher;
         _gamedata = gameData;
-        _turnsUntilPlacementPhaseEnd = _gamedata.PlayerPieces.Count + _gamedata.IAPieces.Count + 1;
+        totalNumberOfPieces = _gamedata.PlayerPieces.Count + _gamedata.IAPieces.Count;
        
     }
 
@@ -66,7 +67,7 @@ public class GameController
     {
         _cantMove.Callback = NextTurn;
         _placementPhase = true;
-        _turn = 0;
+        _gameFinishedBool = false;
         _aiController.SpawnPieces();
         return ChooseStartingTeam();
     }
@@ -75,7 +76,7 @@ public class GameController
     {
         int randomInt = Random.Range(0, 2);
         var team = (Team[])Enum.GetValues(typeof(Team));
-        _currentPlayer = team[randomInt];
+        _currentPlayer = team[0];
         _waitingPlayer = Team.Player1;
         if (_currentPlayer == Team.Player1)
             _waitingPlayer = Team.Player2;
@@ -89,12 +90,14 @@ public class GameController
 
     public void NextTurn(Team currentPlayer, Team waitingPlayer)
     {
-        _turn++;
+        if (_gameFinishedBool)
+            return;
+     
         _changeTurnEvent.Team = _currentPlayer = currentPlayer;
         _waitingPlayer = waitingPlayer;
         _eventDispatcher.Raise(_changeTurnEvent);
 
-        if (_turn == _turnsUntilPlacementPhaseEnd)
+        if (_placementPhase && _boardManager.GetNumberOfOccupiedTiles() == totalNumberOfPieces)
         {
             _eventDispatcher.Raise(_endOfDeploymentEvent);
             _placementPhase = false;
@@ -102,7 +105,7 @@ public class GameController
 
         if (currentPlayer == Team.Player1)
         {
-            if(!_boardManager.CanMove())
+            if(!_placementPhase && !_boardManager.CanMove())
             {
                 if (!_boardManager.CanAIMove())
                 {
@@ -113,7 +116,7 @@ public class GameController
             }
             return;
         }
-        _coroutineRunner.StartCoroutine(this,AITurn());
+        _coroutine = _coroutineRunner.StartCoroutine(this,AITurn());
     }
 
     public void  SendCantMoveEvent(Team currentPlayer, Team waitingPlayer)
@@ -134,6 +137,8 @@ public class GameController
 
     public void GameFinished(Result result)
     {
+        _gameFinishedBool = true;
+        _coroutineRunner.StopCoroutine(this, _coroutine);
         _gameFinished.Result = result;
         _boardManager.EndGameAnimations(result);
         _eventDispatcher.Raise(_gameFinished);
@@ -143,7 +148,7 @@ public class GameController
     {
        
         _movementLog.Add(new MovementLog(coord, ID, team));
-        if (_movementLog.Count == 13)
+        if (_movementLog.Count == 17)
         {
             _movementLog.RemoveAt(0);
             if (CheckForRepeatingPattern())
@@ -153,22 +158,22 @@ public class GameController
 
     private bool CheckForRepeatingPattern()
     {
-        if (patternChecker(3, 6)) // ABC ABC ABC
+        if (patternChecker(3, 9)) // ABC ABC ABC ABC
             return true;
-        if (patternChecker(4, 4)) // ABCD ABCD
+        if (patternChecker(4, 8)) // ABCD ABCD ABCD
             return true;
         if (patternChecker(5, 5)) // ABCDE ABCDE
             return true;
-        if (patternChecker(6, 6)) // ABCDEF ABCDEF
+        if (patternChecker(6, 6)) // ABCDEF ABCDEF 
             return true;
         return false;
     }
 
     private bool patternChecker(int patternLenght, int totalLenght)
     {
-        for (int i = 0; i < totalLenght; i++)
+        for (int i = 15; i >= 16-totalLenght; i--)
         {
-            if (!MovementLogEquals(_movementLog[i], _movementLog[i + patternLenght]))
+            if (!MovementLogEquals(_movementLog[i], _movementLog[i - patternLenght]))
             {
                 return false;
             }

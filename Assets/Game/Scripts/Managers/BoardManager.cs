@@ -12,7 +12,7 @@ using Utils;
 public class BoardManager : MonoBehaviour
 {
     private const float TILESIZE = 1; // WE WONT GO THAT FAR SO FOR NOW IS A CONST
-    private const int MINSIZE = 3;
+    private const int MINSIZE = 2;
 
 
     [SerializeField]
@@ -36,7 +36,7 @@ public class BoardManager : MonoBehaviour
     private List<TileController> _validTiles = new List<TileController>();
     private TileController[,] _tileControllers;
     private GameController _gameController;
-    private List<PlayerPieceView> _pieceBehaviours = new List<PlayerPieceView>();
+    private List<PlayerPieceView> _playerPieceViews = new List<PlayerPieceView>();
 
     private EventDispatcher _eventDispatcher;
 
@@ -63,7 +63,7 @@ public class BoardManager : MonoBehaviour
     
     private void StartGame(PlayButtonClickedEvent ev)
     {
-        float timeToFinishAnimations = (_boardSize.x * _boardSize.y * 0.05f) + 0.8f + _pieceBehaviours.Count / 5f;
+        float timeToFinishAnimations = (_boardSize.x * _boardSize.y * 0.05f) + 0.8f + _playerPieceViews.Count / 5f;
         _deploymentPhase = true;
         _gameController = new GameController(this, _eventDispatcher, _gameData);
         InitializeTiles();
@@ -78,7 +78,7 @@ public class BoardManager : MonoBehaviour
     private void SetupCamera()
     {
         float cameraVerticalOffset = Mathf.Max((_boardSize.x - MINSIZE) * 2, (_boardSize.y - MINSIZE - 2) * 2) + 7;
-        float cameraYOffset = _boardSize.y + 1;
+        float cameraYOffset = _boardSize.y + 2;
         _camera.transform.position = new Vector3(_boardSize.x / 2f - TILESIZE / 2, cameraVerticalOffset, (_boardSize.y / 2f - TILESIZE / 2) - cameraYOffset);
     }
 
@@ -88,11 +88,11 @@ public class BoardManager : MonoBehaviour
         {
             Destroy(_tilesContainer.GetChild(i).gameObject);
         }
-        for (int i = _pieceBehaviours.Count - 1; i >= 0; i--)
+        for (int i = _playerPieceViews.Count - 1; i >= 0; i--)
         {
-            Destroy(_pieceBehaviours[i].gameObject);
+            Destroy(_playerPieceViews[i].gameObject);
         }
-        _pieceBehaviours.Clear();
+        _playerPieceViews.Clear();
         var aiPieces = _gameController.GetAIPieces();
         for (int i = aiPieces.Count - 1; i >= 0; i--)
         {
@@ -111,7 +111,7 @@ public class BoardManager : MonoBehaviour
             float xPos = center + (i - (_gameData.PlayerPieces.Count - 1) / 2f);
             PlayerPieceView pb = Instantiate(_gameData.PlayerPieces[i], new Vector3(xPos, yOffset, distanceFromBoard), Quaternion.Euler(0, -90, 0), _tilesContainer)
                 .GetComponent<PlayerPieceView>();
-            _pieceBehaviours.Add(pb);
+            _playerPieceViews.Add(pb);
             pb.Initialize(Vector2Int.one * -1, starting);
         }
     }
@@ -191,7 +191,7 @@ public class BoardManager : MonoBehaviour
     private void AnimatePieces()
     {
         int index = 0;
-        foreach(var piece in _pieceBehaviours)
+        foreach(var piece in _playerPieceViews)
         {
             piece.SpawnAnimation((_boardSize.x * _boardSize.y * 0.05f) + 0.8f + index / 5f);
             index++;
@@ -209,7 +209,7 @@ public class BoardManager : MonoBehaviour
         yield return new WaitForSeconds(1 + t);
         _eventDispatcher.Raise<BoardFinishedAnimationEvent>();
         yield return new WaitForSeconds(3);
-        foreach (PlayerPieceView piece in _pieceBehaviours)
+        foreach (PlayerPieceView piece in _playerPieceViews)
         {
             piece.GameStarts();
         }
@@ -229,7 +229,7 @@ public class BoardManager : MonoBehaviour
                     piece.DespawnAnimation(i);
                     i++;
                 }
-                foreach (PlayerPieceView piece in _pieceBehaviours)
+                foreach (PlayerPieceView piece in _playerPieceViews)
                 {
                     piece.VictoryAnimation();
                     i++;
@@ -237,7 +237,7 @@ public class BoardManager : MonoBehaviour
                 break;
             case GameController.Result.Defeat:
                 team = GameController.Team.Player2;
-                foreach (PlayerPieceView piece in _pieceBehaviours)
+                foreach (PlayerPieceView piece in _playerPieceViews)
                 {
                     piece.DespawnAnimation(i);
                     i++;
@@ -250,7 +250,7 @@ public class BoardManager : MonoBehaviour
                 break;
             case GameController.Result.Draw:
                 team = GameController.Team.None;
-                foreach (PlayerPieceView piece in _pieceBehaviours)
+                foreach (PlayerPieceView piece in _playerPieceViews)
                 {
                     piece.DespawnAnimation(i);
                     i++;
@@ -286,12 +286,15 @@ public class BoardManager : MonoBehaviour
     public bool CanMove()
     {
         List<TileController> validTiles = GetEmptyTiles();
-        foreach (PlayerPieceView pb in _pieceBehaviours)
+        foreach (PlayerPieceView pp in _playerPieceViews)
         {
             List<TileController> validMovementTiles = new List<TileController>();
-            var movementValidTiles = pb.MovementType.GetValidPositions(pb.TileCoords, _boardSize, validTiles);
-            if(movementValidTiles.Count > 0 || _deploymentPhase)
+            var movementValidTiles = pp.MovementType.GetValidPositions(pp.TileCoords, _boardSize, validTiles);
+            if(movementValidTiles.Count > 0)
+            {
                 return true;
+            }
+                
         }
         return false;
     }
@@ -334,6 +337,20 @@ public class BoardManager : MonoBehaviour
             }
         }
         return validTiles;
+    }
+
+    public int GetNumberOfOccupiedTiles()
+    {
+        int i = 0;
+        for (int x = 0; x < _boardSize.x; x++)
+        {
+            for (int z = 0; z < _boardSize.y; z++)
+            {
+                if (_tileControllers[x, z].Team != GameController.Team.None)
+                    i++;
+            }
+        }
+        return i;
     }
 
     private void ValidateMovement(PieceReleasedEvent ev)
@@ -555,7 +572,7 @@ public class BoardManager : MonoBehaviour
 
     public bool CanTileBeReached(TileController tile)
     {
-        foreach (PlayerPieceView pb in _pieceBehaviours)
+        foreach (PlayerPieceView pb in _playerPieceViews)
         {
             if (CheckValidTiles(pb).Contains(tile))
                 return true;
