@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\alber\\Documents\\Tatedrez\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\managers\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\managers\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\aidifficulty\\aimedium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\movementtype\\knightmovementbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\movementtype\\knightmovementbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\movementtype\\rookmovementbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\movementtype\\rookmovementbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\managers\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\managers\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\aidifficulty\\aimedium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\aidifficulty\\aimedium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\aidifficulty\\aieasy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\aidifficulty\\aieasy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|c:\\users\\alber\\documents\\tatedrez\\assets\\game\\scripts\\views\\ui\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\scripts\\views\\ui\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{212E354E-B21B-DEB2-CA9D-031206686685}|Assembly-CSharp.csproj|C:\\Users\\alber\\Documents\\Tatedrez\\assets\\game\\scripts\\scriptableobjects\\resultscreencatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,50 +50,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "RookMovementBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\MovementType\\RookMovementBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\MovementType\\RookMovementBehaviour.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\MovementType\\RookMovementBehaviour.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\MovementType\\RookMovementBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:28:35.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KnightMovementBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\MovementType\\KnightMovementBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\MovementType\\KnightMovementBehaviour.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\MovementType\\KnightMovementBehaviour.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\MovementType\\KnightMovementBehaviour.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:27:54.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AIEasy.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\AiDifficulty\\AIEasy.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\AiDifficulty\\AIEasy.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\AiDifficulty\\AIEasy.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\AiDifficulty\\AIEasy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:22:37.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AIController.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\AIController.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Controllers\\AIController.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\AIController.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\Controllers\\AIController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAtwCUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:22:07.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HUDView.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
+              "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
+              "RelativeToolTip": "Assets\\Game\\Scripts\\Views\\UI\\HUDView.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAEwKkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T07:52:48.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AIMedium.cs",
               "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
               "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
               "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
               "RelativeToolTip": "Assets\\Game\\Scripts\\AiDifficulty\\AIMedium.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA1AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAlwBQAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T00:31:02.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BoardManager.cs",
               "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
               "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
               "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
               "RelativeToolTip": "Assets\\Game\\Scripts\\Managers\\BoardManager.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAowFAAAAAuAAAA",
+              "ViewState": "AQIAADgCAAAAAAAAAAAAwEwCAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T22:35:04.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Controllers\\GameController.cs",
               "ToolTip": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Controllers\\GameController.cs",
               "RelativeToolTip": "Assets\\Game\\Scripts\\Controllers\\GameController.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAADwv6IAAAAfAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAgwGwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T22:32:32.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "GameFinishedEvent.cs",
               "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
@@ -81,12 +166,11 @@
               "RelativeToolTip": "Assets\\Game\\Scripts\\Events\\GameFinishedEvent.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T22:36:28.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T22:36:28.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ResultScreenCatalog.cs",
               "DocumentMoniker": "C:\\Users\\alber\\Documents\\Tatedrez\\Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
               "RelativeDocumentMoniker": "Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
@@ -94,8 +178,7 @@
               "RelativeToolTip": "Assets\\Game\\Scripts\\ScriptableObjects\\ResultScreenCatalog.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T08:14:50.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T08:14:50.843Z"
             }
           ]
         }

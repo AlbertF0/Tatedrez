@@ -18,8 +18,8 @@ MonoBehaviour:
   - {fileID: 6773652716965916599, guid: d719ab71eb36ea3419e443992fb7bfd6, type: 3}
   - {fileID: 6704188498738767669, guid: 76c60ca4e0497be45b0222cb5a71b369, type: 3}
   _playerPieces:
-  - {fileID: 3184003572261400178, guid: 5c14e4b36c336084fb6d863a0626fea0, type: 3}
   - {fileID: 872345215129269083, guid: e6fafea453e461c4e89323a8f2649452, type: 3}
+  - {fileID: 3184003572261400178, guid: 5c14e4b36c336084fb6d863a0626fea0, type: 3}
   - {fileID: 4896149603627251601, guid: 44d561880d6ffd949a2ac1f20e819ef9, type: 3}
   _boardSize: {x: 3, y: 3}
   _consecutivePiecesToWin: 3

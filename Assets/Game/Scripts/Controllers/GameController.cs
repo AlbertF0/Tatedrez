@@ -50,6 +50,7 @@ public class GameController
     public GameController(BoardManager boardManager, EventDispatcher eventDispatcher, GameDataSo gameData)
     {
         _coroutineRunner = ServiceLocator.GetService<CoroutineRunner>();
+        eventDispatcher.AddListener<GameFinishedEvent>(GameFinishedGlobal);
         _aiController = new AIController(boardManager, gameData,this);
         _boardManager = boardManager;
         _eventDispatcher = eventDispatcher;
@@ -76,7 +77,7 @@ public class GameController
     {
         int randomInt = Random.Range(0, 2);
         var team = (Team[])Enum.GetValues(typeof(Team));
-        _currentPlayer = team[0];
+        _currentPlayer = team[1];
         _waitingPlayer = Team.Player1;
         if (_currentPlayer == Team.Player1)
             _waitingPlayer = Team.Player2;
@@ -137,11 +138,15 @@ public class GameController
 
     public void GameFinished(Result result)
     {
-        _gameFinishedBool = true;
-        _coroutineRunner.StopCoroutine(this, _coroutine);
         _gameFinished.Result = result;
         _boardManager.EndGameAnimations(result);
         _eventDispatcher.Raise(_gameFinished);
+    }
+
+    private void GameFinishedGlobal(GameFinishedEvent ev)
+    {
+        _gameFinishedBool = true;
+        _coroutineRunner.StopCoroutine(this, _coroutine);
     }
 
     public void LogMovement(Vector2Int coord, int ID, Team team)

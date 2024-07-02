@@ -7,28 +7,45 @@ public class AIMedium : AAILogic
 {
     [SerializeField]
     private int _chanceToMiss;
+ 
 
     public override void PlacePiece(BoardManager boardManager , AiPieceView piece)
     {
-        List<TileController> validTiles = boardManager.GetEmptyTiles();
-        ListUtilities.ShuffleList(validTiles);
-        TileController bestTile = null;
-        int bestScore = int.MinValue;
-
-        foreach (TileController tile in validTiles)
+    
+        if(piece.name == "AIbishop(Clone)")
         {
-            int score = boardManager.EvaluateBoard(tile);
-            if (Random.Range(0, 100) < _chanceToMiss)
-                score = Random.Range(0, 3);
-            if (score > bestScore)
-            {
-                bestScore = score;
-                bestTile = tile;
-                if (score == 3)
-                    break;
-            }
+            piece.MoveIAPiece(boardManager.GetTileByCoord(new Vector2Int(1, 0)));
         }
-        piece.MoveIAPiece(bestTile);
+        if (piece.name == "AIknight(Clone)")
+        {
+            piece.MoveIAPiece(boardManager.GetTileByCoord(new Vector2Int(2, 1)));
+        }
+        if (piece.name == "AIrook(Clone)")
+        {
+            piece.MoveIAPiece(boardManager.GetTileByCoord(new Vector2Int(0, 0)));
+        }
+        
+        
+         // List<TileController> validTiles = boardManager.GetEmptyTiles();
+         // ListUtilities.ShuffleList(validTiles);
+         // TileController bestTile = null;
+         // int bestScore = int.MinValue;
+         // 
+         // foreach (TileController tile in validTiles)
+         // {
+         //     int score = boardManager.EvaluateBoard(tile);
+         //     if (Random.Range(0, 100) < _chanceToMiss)
+         //         score = Random.Range(0, 3);
+         //     if (score > bestScore)
+         //     {
+         //         bestScore = score;
+         //         bestTile = tile;
+         //         if (score == 3)
+         //             break;
+         //     }
+         // }
+         // piece.MoveIAPiece(bestTile);
+        
     }
 
     public override bool MovePiece(List<AiPieceView> piecesSpawned, BoardManager boardManager)

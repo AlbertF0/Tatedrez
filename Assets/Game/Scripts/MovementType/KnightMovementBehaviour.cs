@@ -24,7 +24,7 @@ public class KnightMovementBehaviour : AMovementBehaviour
         foreach (var move in knightMoves)
         {
             Vector2Int newPosition = position + move;
-            if (newPosition.x >= 0 && newPosition.x < matrixSize.x && newPosition.y >= 0 && newPosition.y < matrixSize.y)
+            if (newPosition.x >= 0 && newPosition.x < matrixSize.x && newPosition.y >= 0 && newPosition.y < matrixSize.y && validTiles.Exists(t => t.TileCoords == newPosition))
             {
                 possiblePositions.Add(newPosition);
             }

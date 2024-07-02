@@ -12,7 +12,7 @@ using Utils;
 public class BoardManager : MonoBehaviour
 {
     private const float TILESIZE = 1; // WE WONT GO THAT FAR SO FOR NOW IS A CONST
-    private const int MINSIZE = 2;
+    private const int MINSIZE = 1;
 
 
     [SerializeField]
@@ -78,7 +78,7 @@ public class BoardManager : MonoBehaviour
     private void SetupCamera()
     {
         float cameraVerticalOffset = Mathf.Max((_boardSize.x - MINSIZE) * 2, (_boardSize.y - MINSIZE - 2) * 2) + 7;
-        float cameraYOffset = _boardSize.y + 2;
+        float cameraYOffset = _boardSize.y + 3;
         _camera.transform.position = new Vector3(_boardSize.x / 2f - TILESIZE / 2, cameraVerticalOffset, (_boardSize.y / 2f - TILESIZE / 2) - cameraYOffset);
     }
 
